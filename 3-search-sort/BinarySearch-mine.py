@@ -10,6 +10,8 @@ elements are in a strictly increasing order.
 Return the index of value, or -1 if the value
 doesn't exist in the list."""
 
+# wow, I really overcomplicated this...
+
 def binary_search(input_array, value):
     """Your code goes here."""
     midpoint = len(input_array)//2 
