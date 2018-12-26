@@ -5,11 +5,15 @@ def quicksort(array):
     if len(array) < 2:
         return array
     stack_of_index = []
+    # index stores beginning and the end boundaries
     index = (0, len(array) - 1)
     stack_of_index.append(index)
     for index in stack_of_index:
+        # first value is the element to compare
         e_index = index[0]
+        # second value is the pivot
         pivot_index = index[1]
+        # until they cross paths, keep executing the following:
         while pivot_index > e_index:
             pivot = array[pivot_index]
             e = array[e_index]
@@ -18,7 +22,7 @@ def quicksort(array):
                 array[e_index] = array[pivot_index - 1]
                 array[pivot_index - 1] = pivot
                 pivot_index -= 1
-            else:
+            else: # it's in the correct side of the pivot, so move on
                 e_index += 1
         low = index[0]
         high = index[1]
