@@ -46,3 +46,12 @@ What number would you recommend his function to divide by to speed it up?
 87 creates collisions. 
 125 is divisible by 5 and hence also creates collisions. 
 1001 is wasted space.
+
+### Hash Maps and String Keys
+
+Starting with a key value pair, one can run the keys through a hash function and then store the value in the bucket belonging to the hashed result of the key. 
+
+This can be done with strings too, most typically by using the ASCII value of the string. Python's ord() function converts a char into its ASCII value, and the chr() function converts it back.
+
+Apparently the standard in Java prefers big hash tables over collisions, so they use an equation like:
+s[0]*31^(n-1) + s[1]*31^(n-2) + ... s[n-1]
