@@ -25,3 +25,7 @@ Connectivity, in Graph Theory, indicates the level of connections between nodes.
 A directed graph is weakly connected when only replacing all of the directed edges with undirected edges can cause it to be connected. So if you have a vertex that has an outbound edge but not an inbound edge, and if you replace that edge with a undirected edge it allows connectivity to that vertex, then that graph was weakly connected.
 
 Strongly connected directed graphs have a path from every node to every other node. A to B and B to A. 
+
+### Quiz
+
+Cycles in the provided graph were 3, and it was weakly connected. Odd because I can count 4, so maybe I'm not sure what counts as a cycle?
